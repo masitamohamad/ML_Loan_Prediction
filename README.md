@@ -1,6 +1,6 @@
 # Loan Prediction Model 
 
-# Project Members
+## Project Members
 * Anastasia
 * Anna
 * Catie
