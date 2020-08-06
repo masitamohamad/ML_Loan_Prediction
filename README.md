@@ -1,4 +1,5 @@
 # Loan Prediction Model 
+![account.jpg]('Images/account.jpg')
 
 ## Project Members
 * Anastasia
@@ -21,7 +22,7 @@
 * [Develop index.html](#Developindex.html)
 
 # Database Discovery 
-Data Source: [Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-datasetSource)
+Data Source: [Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset)
 
 Data Fields | DType | Key Parameter Y/N
 :-----:|:-----: |:-----:
