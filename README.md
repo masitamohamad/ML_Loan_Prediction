@@ -1,5 +1,5 @@
 # Loan Prediction Model 
-![account.jpg]('Images/account.jpg')
+![account.jpg](Images/account.jpp)
 
 ## Project Members
 * Anastasia
