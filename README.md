@@ -22,29 +22,33 @@
 * [Develop index.html](#Developindex.html)
 
 # Database Discovery 
-Data Source: [Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset)
+Source of Dataset: The dataset for this project is retrieved from [Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset), the home of Data Science. 
 
-Data Fields | DType | Key Parameter Y/N
-:-----:|:-----: |:-----:
-`Loan_ID` | object | N
-`Gender` | object | N
-`Married`| object | Y
-`Dependents`| object | Y
-`Education` | object | Y
-`Self_Employed`| object | N
-`Applicant Income` | int64 | Y
-`Coapplicant_Income` | float64 | N
-`Loan_Amount`| float64 | Y
-`Loan_Amount_Term` | float64 | N
-`Credit_History`| float64 | N
-`Property_Area` | object | Y
-`Loan_Status` | object | Y
 
 ## Define the Problem
-There are two parts to the question, one is binary (yes/no) and one is predictive (how much)
-Binary problem – logistic regression will answer “do you qualify”Predictor problem – linear regression will answer “based on your income what do you qualify for”Machine Learning Model Selection
-Logistic regression 
+The problem at hand: The major aim of this project is to predict which of the customers will receive a loan or not. Therefore, this is a supervised classification problem to be trained with algorithms like:
+Logistic Regression
+
+ 
+Predictor problem – linear regression will answer “based on your income what do you qualify for ”Machine Learning Model Selection
 Linear regression
+
+
+Columns | Description | Key Parameter Y/N
+:-----:|:-----: |:-----:
+`Loan_ID` | Unique Load ID | N
+`Gender` | Male/Female | N
+`Married`| Married(yes)/Not Married(no) | Y
+`Dependents`| Number of Dependants Claimed by Applicant | Y
+`Education` | Education Level of Applicant (Graduate/Undergraduate) | Y
+`Self_Employed`| If the Applicant is Self-Employed (yes/no) | N
+`Applicant_Income` | Applicant Annual Income | Y
+`Coapplicant_Income` | Co-Applicant's Income | N
+`Loan_Amount`| Loan Amount in Thousands | Y
+`Loan_Amount_Term` | Loan Term in Months | N
+`Credit_History`| Meets Criteria (1;0) | N
+`Property_Area` | Urban, Semi-Urban and Rural | Y
+`Loan_Status` | Approved (yes/no) | Y
 
 ## Presentation
 GitHub readme populated with key technical information (visuals) on our process of discovery, analysis, and model selection.
