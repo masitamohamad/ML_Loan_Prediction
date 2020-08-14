@@ -35,7 +35,7 @@ Linear regression
 
 
 Columns | Description | Key Parameter Y/N
-:-----:|:-----: |:-----:
+:-----|:----- |:-----:
 `Loan_ID` | Unique Load ID | N
 `Gender` | Male/Female | N
 `Married`| Married(yes)/Not Married(no) | Y
@@ -49,6 +49,9 @@ Columns | Description | Key Parameter Y/N
 `Credit_History`| Meets Criteria (1;0) | N
 `Property_Area` | Urban, Semi-Urban and Rural | Y
 `Loan_Status` | Approved (yes/no) | Y
+
+
+![single](Images/single.gif)
 
 ## Presentation
 GitHub readme populated with key technical information (visuals) on our process of discovery, analysis, and model selection.
