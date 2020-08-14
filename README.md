@@ -7,7 +7,14 @@
 * Catie
 * Masita 
 * Matthew
+<br>
 
+<h1 align="center"> ️Contributers </h1>
+
+ [<img src="https://avatars0.githubusercontent.com/u/61332049?s=400&v=4" width="100px;"/><br /><br /><sub><b>Anastasia V</b></sub>](https://github.com/AnastasiaRV)<br /> 
+ [<img src="https://avatars1.githubusercontent.com/u/61209602?s=460&u=5dbd7647e94f58132f5f6e0274767e98fc11bd94&v=4" width="100px;"/><br /><br /><sub><b>Anna Givens</b></sub>](https://github.com/heyannag)<br /> 
+ [<img src="https://avatars3.githubusercontent.com/u/60247306?s=400&u=ae1efcb5e0637cdd4a2afe1c7ab45c9e7eb20bd6&v=4" width="100px;"/><br /><br /><sub><b> Masita M </b></sub>](https://github.com/masitamohamad)<br /> 
+[<img src="https://avatars0.githubusercontent.com/u/61070215?s=400&v=4" width="100px;"/><br /><br /><sub><b> Catie C </b></sub>](https://github.com/csidneyclark)<br /> 
 
 ## Machine Learning Model Project Plan 
 
