@@ -18,40 +18,56 @@
   </head>
   <body>
 
-    <!-- Page Content -->
     <div class="container">
-      <h1 class="mt-5">Can you get approved for a loan?</h1>
-        <p>Answer a few questions to discover how much you're able to borrow in minutes</p>
-        <div class="row">
-            <div class="col-lg-12">
-                <!-- The web form goes here -->
-                <form action="/predict" method="post" id="loan_predict">
-                     <div>
-                        <label for="name">Marital Status</label>
-                        <input type="text" id="married" name="predict_married" placeholder="Single, Married" size="40">
-                    </div>
-                    <div>
-                        <label for="name">Education </label>
-                        <input type="text" id="education" name="predict_education" placeholder="Graduated, Did Not Graduate" size="40">
-                    </div>
-                    <div>
-                        <label for="name">Credit History</label>
-                        <input type="text" id="credit" name="predict_credit" placeholder="Good, Bad" size="40">
-                    </div>
+        <h1 class="display-4"><strong>Can you get approved for a loan?</strong></h1>
+        <hr class="my-4">
+        <p class="lead">Answer a few questions to discover how much you're able to borrow in seconds</p>
+      </div>
 
-                </form>
-            <button class="btn" type="submit" form="loan_predict" value="Submit">See if I qualify -></button>
+      <!-- Page Content -->
+      <div class="container">
+      <div class="form-group">
+        <div class="col-lg-6">
+        
+          <br>
+          <!-- The web form goes here -->
+          <form action="/predict" method="post" id="loan_predict">
+     
+            <div>
+              <label for="name">Marital Status</label>
+              <input type="text" id="married" name="predict_married" placeholder="Single, Married" size="40" class="form-control">
             </div>
+            <br>
+            <div>
+              <label for="name">Education</label>
+              <input type="text" id="education" name="predict_education" placeholder="Graduated, Did Not Graduate" size="40" class="form-control">
+            </div>
+            <br>
+            <div>
+              <label for="name">Credit History</label>
+              <input type="text" id="credit" name="predict_credit" placeholder="Good, Bad" size="40" class="form-control">
+              <small id="creditHelp" class="form-text text-muted">Scores of 670 to 749 are considered by most
+                lenders to be “Good” credit scores</small>
+            </div>
+            <br>
+            <div>
+              <label for="name">Total Monthly Income ($)</label>
+              <input type="value" id="income" name="predict_income" placeholder="Enter your total monthly income" size="40" class="form-control">
+            </div>
+          </form>
 
-            <div class="col-lg-12" style="margin-top:50px;">
-                <!-- Result presentation goes here -->
-                {% if data.prediction %}
-                    <h2><strong>{{data.prediction}}</strong></h2>
-                    <h5>Marital Status: {{data.form.predict_married}}</h5>
-                    <h5>Education: {{data.form.predict_education}}</h5>
-                    <h5>Credit History: {{data.form.predict_credit}}</h5>
-                {% endif %}
-            </div>
+        <br>
+          <button type="submit" class="btn btn-primary" form="loan_predict" value="Submit">See if I qualify -></button>    
+        </div>
+
+        <!-- Result presentation goes here -->
+        <div class="col-lg-12" style="margin-top:50px;">
+          {% if data.prediction %}
+            <h2 class="card-title"><strong>Loan amount: {{data.linearprediction}}</strong></h2>    
+            <h2 class="card-title"><strong>{{data.prediction}}</strong></h2>
+            <p><small>Marital Status: {{data.form.predict_married}}, Education: {{data.form.predict_education}}, Credit History: {{data.form.predict_credit}}, Total Income: {{data.form.predict_income}}</small></p>
+            {% endif %}  
+        </div>
         </div>
         </div>
     </div>

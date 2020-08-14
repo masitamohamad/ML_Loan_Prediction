@@ -7,6 +7,7 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
+from sklearn.externals import joblib
 
 ###########################################################################################
 # Flask Setup
@@ -21,6 +22,11 @@ app = Flask(__name__)
 @app.route('/predict', methods=['GET','POST'])
 def predict():
     data = {}   # data object to be passed back to the web page
+
+    lr_prediction = joblib.load("model.pkl") # Load "model.pkl"
+    print ('Model loaded')
+
+    
     if request.form:
         # get the form data
         form_data = request.form
@@ -28,7 +34,8 @@ def predict():
         predict_married = form_data['predict_married']
         predict_education = form_data['predict_education']
         predict_credit = form_data['predict_credit']
-
+        predict_income = form_data['predict_income']
+        
         print(data)
 
         # convert the input from text to binary
@@ -53,6 +60,18 @@ def predict():
         prediction = L1_logistic.predict_proba(input_data.reshape(1, -1))
         prediction = prediction[0][1] # loan status
         data['prediction'] = '{:.1f}% Approval Probability'.format(prediction * 100)
+
+        #######################################################################
+        # Linear Regression
+
+        predict_income = np.array(float(form_data['predict_income']))
+        predict_income = predict_income.reshape(1, -1)
+
+        loan_amount = lr_prediction.predict(predict_income)
+        print(loan_amount)
+
+        loan_amount_value = round(loan_amount[0][0]*1000,2)
+        data['linearprediction'] = "${:,.2f}".format(loan_amount_value)
 
     return render_template('index.html', data=data)
 
@@ -94,4 +113,6 @@ if __name__ == "__main__":
     y_pred = L1_logistic.predict(X_test)
     print(classification_report(y_test, y_pred, target_names=target_names))
 
+
+###########################################################################################
     app.run(debug=True)
