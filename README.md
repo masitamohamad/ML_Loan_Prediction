@@ -61,3 +61,5 @@ Website:
 3.HTML page for “YES you do qualify, now let’s find out how much of a loan youwill qualify for”
 a.This is the page that will use the linear regression model using the two key parameters for Income, Loan Amountb.Visitors to the site will enter an income amount and the site will output the probable loan amount they will qualify for
 
+## How it all works together
+![image.png](Images/image.png)
