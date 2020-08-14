@@ -25,14 +25,6 @@
 Source of Dataset: The dataset for this project is retrieved from [Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset), the home of Data Science. 
 
 
-## Define the Problem
-The problem at hand: The major aim of this project is to predict which of the customers will receive a loan or not. Therefore, this is a supervised classification problem to be trained with algorithms like:
-Logistic Regression
-
- 
-Predictor problem – linear regression will answer “based on your income what do you qualify for ”Machine Learning Model Selection
-Linear regression
-
 
 Columns | Description | Key Parameter Y/N
 :-----|:----- |:-----:
@@ -50,8 +42,16 @@ Columns | Description | Key Parameter Y/N
 `Property_Area` | Urban, Semi-Urban and Rural | Y
 `Loan_Status` | Approved (yes/no) | Y
 
+## Linear Regression 
+The problem at hand: The major aim of this project is to predict which of the customers will receive a loan or not. Therefore, this is a supervised classification problem to be trained with algorithms like:
+Logistic Regression
 
 ![single](Images/single.gif)
+
+
+Predictor problem – linear regression will answer “based on your income what do you qualify for ”Machine Learning Model Selection
+Linear regression
+
 
 ## Presentation
 GitHub readme populated with key technical information (visuals) on our process of discovery, analysis, and model selection.
