@@ -53,7 +53,7 @@ Columns | Description | Key Parameter Y/N
 The problem at hand: The major aim of this project is to predict which of the customers will receive a loan or not. Therefore, this is a supervised classification problem to be trained with algorithms like:
 Logistic Regression
 
-![single](Images/single.gif)
+![loan_predictor](Images/loan_predictor.gif)
 
 
 Predictor problem – linear regression will answer “based on your income what do you qualify for ”Machine Learning Model Selection
@@ -69,4 +69,4 @@ Website:
 a.This is the page that will use the linear regression model using the two key parameters for Income, Loan Amountb.Visitors to the site will enter an income amount and the site will output the probable loan amount they will qualify for
 
 ## How it all works together
-![image.png](Images/image.png)
+![image.png](Images/process_diagram.png)
