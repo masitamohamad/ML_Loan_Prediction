@@ -26,7 +26,7 @@ Columns | Description | Key Parameter Y/N
 `Loan_ID` | Unique Load ID | N
 `Gender` | Male/Female | N
 `Married`| Maritail Status Y/N) | Y
-`Dependents`| Number of Dependants Claimed by Applicant | N
+`Dependents`| Number of Dependants Claimed | N
 `Education` | College Graduate Y/N | Y
 `Self_Employed`| Self-Employed Y/N | N
 `Applicant_Income` | Applicant Annual Income | Y
