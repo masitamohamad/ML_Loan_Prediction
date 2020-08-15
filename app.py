@@ -84,11 +84,6 @@ if __name__ == "__main__":
     # Build an ML model. Key predictors = 'Married', 'Education', 'Credit_History'
     loan_df = pd.read_csv('Data/clean_data.csv')
 
-    # # convert 'Married' column data to binary values
-    # loan_df['Married_binary'] = loan_df['Married'].map({'Yes': 1, 'No': 0})
-    # # convert 'Education' column data to binary values
-    # loan_df['Education_binary'] = loan_df['Education'].map({'Graduate':1,'Not Graduate':0})
-
     # choose our features and create a test and train sets
     features = ['Married', 'Education', 'Credit_History', 'Loan_Status']
     
