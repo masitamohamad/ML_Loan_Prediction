@@ -15,6 +15,9 @@ Loan Probability with Machine Learning, without a credit score ding!
 [<sub><b> Matt O </b></sub>](https://github.com/oconnormatt781)<br/><img src="https://avatars1.githubusercontent.com/u/59668093?s=460&v=4" width="100px;"/><br/>
 
 
+![loan_predictor](Images/loan_predictor.gif)
+
+
 # Database Discovery 
 Source of Dataset: The dataset for this project is retrieved from [Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset), the home of Data Science. 
 
@@ -43,7 +46,6 @@ Columns | Description | Key Parameter Y/N
 <b>Predictor problem:</b> linear regression will answer the dollar amount do you qualify for based on total applicant income by using algorithm:
 <b>Linear regression</b>
 
-![loan_predictor](Images/loan_predictor.gif)
 
 
 ## How it all works together
@@ -64,9 +66,6 @@ Read the data and checked the shape. Oh! it has 614 rows and 13 columns. That’
  Now all missing values are dropped to avoid errors in the model.
 
 ## Exploring the Data
-
-![gender](Images/gender.png)<br/>
-More males apply for loan than females, and are more likely to be approved. 
 
 ![married](Images/Loan_Status_Married.png)<br/>
 As seen above, a Married Person has more chance of getting the loan.
