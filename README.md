@@ -37,7 +37,7 @@ Columns | Description | Key Parameter Y/N
 
 # Machine Learning Models 
 <b>The problem at hand:</b> The major aim of this project is to predict which of the customers will receive a loan or not. Therefore, this is a supervised classification problem to be trained with algorithm:
-<b>Logistic Regression</>
+<b>Logistic Regression</b>
 
 
 <b>Predictor problem:</b> linear regression will answer the dollar amount do you qualify for based on total applicant income by using algorithm:
@@ -65,13 +65,13 @@ Read the data and checked the shape. Oh! it has 614 rows and 13 columns. That’
 
 ## Exploring the Data
 
-![gender](Images/gender.png)
+![gender](Images/gender.png)<br/>
 More males apply for loan than females, and are more likely to be approved. 
 
-![married](Images/Loan_Status_Married.png)
+![married](Images/Loan_Status_Married.png)<br/>
 As seen above, a Married Person has more chance of getting the loan.
 
-![graduate](Images/Loan_Status_Education.png)
+![graduate](Images/Loan_Status_Education.png)<br/>
 Also, a Graduate level degree give the individual more chance of getting the loan. 
 
 ## Encoding to numeric Data; getting ready for model training
