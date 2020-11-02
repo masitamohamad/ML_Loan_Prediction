@@ -1,8 +1,7 @@
 # Loan Prediction Using selected Machine Learning Algorithms
-![account](Images/account.jpg)
 ------------------------------
 Loan Probability with Machine Learning, without a credit score ding!
-<h1> ️Contributers </h1>
+<h1> ️Contributors </h1>
 
 [<sub><b>Anastasia V</b></sub>](https://github.com/AnastasiaRV)<br/><img src="https://avatars0.githubusercontent.com/u/61332049?s=400&v=4" width="100px;"/><br/>
 
