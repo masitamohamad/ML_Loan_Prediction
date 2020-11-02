@@ -1,5 +1,4 @@
 # Loan Prediction Using selected Machine Learning Algorithms
-------------------------------
 Loan Probability with Machine Learning, without a credit score ding!
 <h1> ️Contributors </h1>
 
